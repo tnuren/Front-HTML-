@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- css를 따로 지정할 때는 style 태그 사용 -->
+        <style>
+            /* a 태그 스일 적용 */
+            a:link {
+                color: red;
+                /* transparent => 배경색을 투명하게 */
+                background-color: transparent;
+                /* 밑줄 없어진다(text-decoration none). */
+                text-decoration: none;
+            }
+            a:visited{
+                /* 링크를 사용한 후 색이 바뀐다. */
+                color: green;
+            }
+            /* hover => 링크에 마우스를 올렸을 때 색이 바뀜 */
+            a:hover{
+                color: rgb(250, 250, 20);
+            }
+            a:active{
+                /* 링크를 클릭했을 때(그순간) */
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 링크태그에 효과적용해보기 -->
+        <a href="https://www.google.com">링크입니다.</a>
+    </body>
+</html>
