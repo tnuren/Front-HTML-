@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function number(){
+                var num1 = document.getElementById('num1').value;                
+                var grade = 0;
+                                
+                if(num1>=90){
+                    grade = 'A'
+                } else if (num1>=80){
+                    grade = 'B'
+                } else if (num1>=70){
+                    grade = 'C'
+                } else if (num1>=60){
+                    grade = 'D'
+                } else {
+                    grade = 'F'
+                }
+                
+                document.getElementById('num2').value = grade;
+                document.getElementById('num3').innerHTML = grade;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1>성적산출하기</h1>
+
+        점수 : <input type="number" id="num1"><br>
+        성적 : <input type="text" id="num2"><br>
+        <button onclick="number()">성적??</button>
+        <p id=num3>성적이 나오는곳</p>
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function test1(){                
+                var ele = document.getElementById('id1');
+                console.log(ele.value);
+                document.getElementById('email').value = ele.value;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        이메일 : <input placeholder="이메일을 입력하세요">  @
+            <input id="email">
+        <select id="id1" onchange="test1()">
+            <option value="">입력하세요</option>
+            <option value="naver.com">naver.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="hanmail.com">hanmail.com</option>            
+        </select>
+
+        <h2 id="id2"></h2>
+
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table , td , tr{
+                border: 1px solid black;
+                border-collapse: collapse;  
+                padding: 3px;
+                text-align: center;                       
+            }
+            tr:nth-child(even){
+                background-color: rgb(255, 141, 141);
+            }
+        </style>
+        <script>           
+            function number (){                               
+                   var result = "<table>";                    
+                    for(var i = 2; i<=9; i++){       
+                            result += "<tr>";  
+                            result += "<td>"+i+"단</td>";         
+                        for(var j = 1; j<=9; j++){                                                       
+                            result += "<td>" + i*j + "</td>" ;                       
+                        }
+                    } 
+                    result += "</table>";
+                    document.getElementById('id1').innerHTML = result;                
+            }
+
+        </script>
+      </head>
+
+    <body>
+        <button onclick="number()">구구단출력</button>
+        
+        <div id="id1">
+
+        </div>
+        
+    </body>
+
+</html>  
+
+    
