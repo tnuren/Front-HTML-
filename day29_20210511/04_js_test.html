@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function test1() {
+                var pw1 = document.getElementById('pw1').value;
+                var pw2 = document.getElementById('pw2').value;                
+                var tf = document.getElementById('id3');
+                if(pw1==pw2){
+                    tf.style.color = 'green';
+                    tf  = '일치' 
+                } else {
+                    tf.style.color = 'red';
+                    tf = '불일치'
+                }
+                document.getElementById('id3').innerHTML = tf;
+            }
+        </script>
+        
+
+    </head>
+
+    <body>
+        비밀번호 : <input id="pw1" type="text" placeholder="비밀번호를 입력하세요" 
+        onkeyup="test1()"><br>
+        비밀번호확인 : <input id="pw2" type="text" placeholder="비밀번호를 한번 더 입력하세요"
+        onkeyup="test1()">
+        <div id="id3">
+
+        </div>
+    </body>
+
+</html>
