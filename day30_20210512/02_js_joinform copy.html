@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+            <!-- js 파일 import -->    
+            <script src="../js/joinform.js"></script>
+            <!-- css 폴더 만들어서 joinform.css 파일 만들기 -->
+            <!-- css 파일 import -->
+            <link rel="stylesheet" href="../css/joinform.css">
+    </head>
+
+   
+
+    <body>
+        아이디 : <input type="text" id="id" onblur="idcheck()" placeholder="아이디를 입력하세요"><br>
+        <span id="idcheck"></span><br>
+        
+        비밀번호 : <input type="text" id="pw" onblur="pwcheck()" placeholder="비밀번호를 입력하세요"><br>
+        <span id="pwcheck"></span><br>
+
+        비밀번호확인 : <input type="text" id="pw-confirm" onblur="pwconfirm()" placeholder="비밀번호를 입력하세요"> <br>
+        <span id="pwconfirm"></span><br>
+
+        이름 : <input type="text" id="name" onblur= "namecheck()" placeholder="이름을 입력해주세요"><br>
+        <span id="namecheck"></span><br>
+
+        이메일 : <input> @ 
+        <input id="domain">
+        <select id="email" onchange="emailcheck()">
+            <option selected="">직접입력</option>
+            <option value="naver.com">네이버</option>
+            <option value="gmail.com">지메일</option>
+            <option value="hanmail.com">한메일</option>
+        </select> <br><br>
+
+        전화번호 : <input  type="text" id="phone" onblur="phonecheck()" placeholder="전화번호를 입력해주세요"><br>
+        <span id="phonecheck"></span><br>
+
+        <input type="text" id="sample4_postcode" placeholder="우편번호">
+<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+<input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+<input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+<span id="guide" style="color:#999;display:none"></span>
+<input type="text" id="sample4_detailAddress" placeholder="상세주소">
+<input type="text" id="sample4_extraAddress" placeholder="참고항목">
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+   
+</script>
+
+
+    </body>
+
+</html>
